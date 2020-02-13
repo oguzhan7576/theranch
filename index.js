@@ -100,7 +100,7 @@ if(kickUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You c
 
 var kick = new discord.RichEmbed()
 .setDescription("Kick")
-.setcolor("#eb4034")
+.setColor("#eb4034")
 .addField("Kicked Member", kickUser)
 .addField("Kicked by", message.author)
 .addField("Reason", reason);
@@ -131,7 +131,7 @@ if(command === `${prefix}ban`) {
     
     var ban = new discord.RichEmbed()
     .setDescription("Ban list member")
-    .setcolor("#eb4034")
+    .setColor("#eb4034")
     .addField("Banned Member", banUser)
     .addField("Banned by", message.author)
     .addField("Reason", reason);
