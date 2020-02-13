@@ -29,18 +29,19 @@ module.exports.run = async (bot, message, args) => {
          if (err) console.log(err);
      });
 
+var warnEmbed = new discord.RichEmbed()
+.setDescription("Warn")
+.setColor("#eb4034")
+.addField("Warned member", warnUser)
+.addField("Warned by", message.author)
+.addField("Reason:", reason);
 
+var warnChannel = message.guild.channels.find(`name`, "📂sanction-log");
+if(!warnChannel) return message.guild.send("I can not find the channel try again");
 
+warnChannel.send(warnEmbed);
 
-
-
-
-
-
-
-
-
-
+ 
 
 
 
