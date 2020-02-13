@@ -87,8 +87,71 @@ if(command === `${prefix}server`) {
     
     }
 
+if(command === `${prefix}kick`){
+
+var kickUser = message.guild.member(message.mentions.users.first() || message.guild.members(arguments[0]));
+
+if(!kickUser) return message.channel.send("Member not found.");
+
+var reason = arguments.join(" ").slice[22];
+if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Sorry you ar not admin.");
+
+if(kickUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You cannot kick this member");
+
+var kick = new discord.RichEmbed()
+.setDescription("Kick")
+.setcolor("#eb4034")
+.addField("Kicked Member", kickUser)
+.addField("Kicked by", message.author)
+.addField("Reason", reason);
 
 
+var kickChannel = message.guild.channels.find(`name`, "📂sanction-log");
+if(!kickChannel) return message.guild.send("Can not found the channel.");
+
+message.guild.member(kickUser).kick(reason);
+
+kickChannel.send(kick);
+
+
+    return;
+
+} 
+
+if(command === `${prefix}ban`) {
+
+    var banUser = message.guild.member(message.mentions.users.first() || message.guild.members(arguments[0]));
+
+    if(!banUser) return message.channel.send("Member not found.");
+    
+    var reason = arguments.join(" ").slice[22];
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Sorry you ar not admin.");
+    
+    if(banUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You cannot ban this member");
+    
+    var ban = new discord.RichEmbed()
+    .setDescription("Ban list member")
+    .setcolor("#eb4034")
+    .addField("Banned Member", banUser)
+    .addField("Banned by", message.author)
+    .addField("Reason", reason);
+    
+    
+    var banChannel = message.guild.channels.find(`name`, "📂sanction-log");
+    if(!banChannel) return message.guild.send("Can not found the channel.");
+    
+    message.guild.member(banUser).ban(reason);
+    
+    banChannel.send(ban);
+    
+    
+        return;
+    
+
+
+
+
+}
 
 
 
