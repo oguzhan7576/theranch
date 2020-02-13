@@ -34,6 +34,7 @@ var warnEmbed = new discord.RichEmbed()
 .setColor("#eb4034")
 .addField("Warned member", warnUser)
 .addField("Warned by", message.author)
+.addField("Total Warns:", warns[user.id].warns)
 .addField("Reason:", reason);
 
 var warnChannel = message.guild.channels.find(`name`, "📂sanction-log");
