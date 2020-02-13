@@ -89,7 +89,7 @@ if(command === `${prefix}server`) {
 
 if(command === `${prefix}kick`){
 
-var kickUser = message.guild.member(message.mentions.users.first() || message.guild.members(arguments[0]));
+var kickUser = message.guild.member(message.mentions.users.first() || message.guild.member(arguments[0]));
 
 if(!kickUser) return message.channel.send("Member not found.");
 
@@ -120,7 +120,7 @@ kickChannel.send(kick);
 
 if(command === `${prefix}ban`) {
 
-    var banUser = message.guild.member(message.mentions.users.first() || message.guild.members(arguments[0]));
+    var banUser = message.guild.member(message.mentions.users.first() || message.guild.member(arguments[0]));
 
     if(!banUser) return message.channel.send("Member not found.");
     
