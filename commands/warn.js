@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
 
      fs.writeFile("./warning.json", JSON.stringify(warns), (err) => {
          if (err) console.log(err);
-     })
+     });
 
 
 
