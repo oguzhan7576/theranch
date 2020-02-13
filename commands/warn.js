@@ -37,7 +37,7 @@ var warnEmbed = new discord.RichEmbed()
 .addField("Total Warns:", warns[user.id].warns)
 .addField("Reason:", reason);
 
-var warnChannel = message.guild.channels.find(`name`, "📂sanction-log");
+var warnChannel = message.guild.channels.find(`name`, "sanction-log");
 if(!warnChannel) return message.guild.send("I can not find the channel try again");
 
 warnChannel.send(warnEmbed);
