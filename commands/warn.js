@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
     if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("You cannot warn people");
 
-    var user = message.guild.member(message.mentions.user.first() || message.guild.members.get(args[0]));
+    var user = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
  
     if(!user) return message.channel.send("Specify a user.");
 
@@ -44,6 +44,28 @@ warnChannel.send(warnEmbed);
 
  
 
+if(warns[user.id].warns == 3){
+
+    var warnmessage = new discord.RichEmbed()
+.setDescription("BEWARE" + user)
+.setColor("#eb4034")
+.addField("The Ranch:", "another warning and you will get a ban!!!");
+
+
+message.channel.send(warnmessage);
+
+
+
+}
+
+
+else if(warns[user.id].warns == 4){
+
+message.guild.member(user).ban(reason);
+message.channel.send(`${user} has been banned from server.`);
+
+    
+}
 
 
 
