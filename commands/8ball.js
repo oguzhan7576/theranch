@@ -1,5 +1,5 @@
 module.exports.run = async (_, message, args) => {
-    const answers = ["Yes", "No", "Maybe", "Please ask again later"];
+    const answers = ["Yes✅", "No❌", "Maybe🌂", "Please ask again later❗️"];
     const response = answers[Math.floor(Math.random() * answers.length)];
   
     if (args.length < 2) {
