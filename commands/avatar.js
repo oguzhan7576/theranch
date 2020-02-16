@@ -1,4 +1,4 @@
-module.exports.run = (_, message, _) => {
+ module.exports.run = (_, message, _) => {
     if (!message.mentions.users.size) {
       return message.channel.send(
         `Your avatar: <${message.author.displayAvatarURL}>`
