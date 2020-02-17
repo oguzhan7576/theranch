@@ -3,11 +3,6 @@ const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
 
-    const infoList = fs.readFileSync("./info.txt", "utf8");
-    const adminCommands = fs.readFileSync("./admin.txt", "utf8");
-    const funcommands = fs.readFileSync("./fun.txt", "utf8");
-    let bicon = bot.user.displayAvatarURL;
-    const pidor = message.guild.members.get(args[0]) || message.member;
 
     let funEmbed = new Discord.RichEmbed()
     .setColor("00ff00")
