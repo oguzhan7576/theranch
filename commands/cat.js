@@ -10,6 +10,8 @@ module.exports.run = async (bot, message, args) => {
                     .setImage(body)
                     .setColor("#00ff00")
                     .setTitle("Here is your random cat")
+                    .setFooter(`Information about: ${bot.user.username}. Developed by: The Ranch`)
+                    .setTimestamp();
                               
                    message.channel.send(emb)  
             }
