@@ -8,6 +8,8 @@ module.exports.run = async (bot, message, args) => {
  .setColor("#00ff00")
  .setThumbnail(bicon)
  .addField("Use this invite to invite the bot in your server!", "https://bots.ondiscord.xyz/bots/671809959553662996")
+ .setFooter(`Information about: ${bot.user.username}. Developed by: The Ranch`)
+ .setTimestamp()
 
  message.channel.send(inviteEmbed);
 

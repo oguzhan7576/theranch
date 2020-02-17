@@ -34,6 +34,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Reqested by ", Sender)
     .addField("Message: ", sayMessage)
     .setFooter("Thanks you for contacting with the OdarBot support!")
+    .setTimestamp();
 
     message.channel.send(embed).then(msg => {msg.delete(10000)});
 

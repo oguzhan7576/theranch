@@ -11,7 +11,8 @@ module.exports.run = async (bot, message, args) => {
         .setColor("00ff00")
         .setTitle("Avatar")
         .setFooter("Searched by " + message.author.tag)
-        .setDescription("[Avatar URL link]("+mentionedUser.displayAvatarURL+")");
+        .setDescription("[Avatar URL link]("+mentionedUser.displayAvatarURL+")")
+        .setTimestamp();
 
         message.channel.send(embed)
 
