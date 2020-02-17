@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
  .setThumbnail(bicon)
  .addField("Use this invite to invite the bot in your server!", "https://discord.gg/mdCzGnE")
  .setFooter(`Information about: ${bot.user.username}. Developed by: The Ranch`)
- .setTimestamp()
+ .setTimestamp();
 
  message.channel.send(inviteEmbed);
 
