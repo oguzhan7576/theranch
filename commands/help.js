@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 
 try{
     
-var text = "**The Ranch Command List** \n\n __The Ranch Command__ \n ``!Ping: Check Your Ping!⏳`` \n ``!server: Check The Ranch Server Information.📂`` \n ``!update: View the bot update📡`` \n ``!avatar: Check Your Avatar!😅`` \n\n  __The Ranch MiniGames__ \n ``!sps: <stone, paper, scissors,💎`` \n ``!8ball: will I be rich later? (Get a random answer back)🎱``";
+var text = "**The Ranch Command List** \n\n __The Ranch Command__ \n ``!Ping: Check Your Ping!⏳`` \n ``!server: Check The Ranch Server Information.📂`` \n ``!update: View the bot update📡`` \n ``!avatar: Check Your Avatar!😅`` \n ``!rate: rate a member.`` \n ``!avatar: check member profile picture.`` \n ``!kill: Kill a member.`` \n ``!userinfo: Check the member info.`` \n ``!botinfo: Check the Bot information.`` \n ``!id: Check your ID.`` \n ``!invite: Invite The Ranch bot to your server.`` \n ``!server: Check the The Ranch Discord server & Join!.``  \n\n  __The Ranch MiniGames__ \n ``!sps: <stone, paper, scissors,💎`` \n ``!8ball: will I be rich later? (Get a random answer back)🎱``";
 
 message.author.send(text);
 
