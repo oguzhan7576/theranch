@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 const request = require('request'); 
 
-const Discord = require("discord.js")
+
 
 module.exports.run = async (bot, message, args) => {
         request('http://edgecats.net/random', function (error, response, body) {
