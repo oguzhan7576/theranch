@@ -25,6 +25,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Channels", message.guild.channels.size, inline)
     .addField("You Joined", message.member.joinedAt)
     .setFooter(`Created ${message.guild.createdAt}`);
+    
 
     message.channel.send(serverembed);
 
