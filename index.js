@@ -103,7 +103,9 @@ var kick = new discord.RichEmbed()
 .setColor("#eb4034")
 .addField("Kicked Member", kickUser)
 .addField("Kicked by", message.author)
-.addField("Reason", reason);
+.addField("Reason", reason)
+.setTimestamp()
+.setFooter(member.id);
 
 
 var kickChannel = message.guild.channels.find(`name`, "📂sanction-log");
@@ -134,7 +136,9 @@ if(command === `${prefix}ban`) {
     .setColor("#eb4034")
     .addField("Banned Member", banUser)
     .addField("Banned by", message.author)
-    .addField("Reason", reason);
+    .addField("Reason", reason)
+    .setTimestamp()
+    .setFooter(member.id);
     
     
     var banChannel = message.guild.channels.find(`name`, "📂sanction-log");
