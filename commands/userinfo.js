@@ -32,7 +32,7 @@ if (member.user.bot === true) {
                 .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "<:no:425632070036094986> No Roles"}`, true)
                 .addField("Joined Discord At", member.user.createdAt)
                 .setFooter(`Information about ${member.user.username}`)
-                .setTimestamp()
+                .setTimestamp();
     
             message.channel.send(embed);
 
