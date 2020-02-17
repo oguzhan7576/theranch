@@ -69,23 +69,9 @@ if(command === `${prefix}update`){
 
 }
 
-if(command === `${prefix}server`) {
 
-    var icon = message.guild.iconURL;
     
-       var serverEmbed = new discord.RichEmbed()
-       .setDescription("Server Information")
-       .setColor("#137d2f")
-       .setThumbnail(icon)
-       .addField("Server name:" , bot.user.username)
-       .addField("You are joined on", message.member.joinedAt)
-       .addField("Total members", message.guild.memberCount)
-       .addField("Made on", bot.user.createdAt);
-
-
-        return message.channel.send(serverEmbed);
     
-    }
 
 if(command === `${prefix}kick`){
 
