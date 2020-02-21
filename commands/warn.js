@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 var warnEmbed = new discord.RichEmbed()
 .setDescription("Warn")
 .setColor("#eb4034")
-.setAuthor("User Name", message.member.avatarURL)
+.setAuthor("User Name", message.author.avatarURL)
 .addField("Warned member", user)
 .addField("Warned by", message.author)
 .addField("Total Warns:", warns[user.id].warns)
