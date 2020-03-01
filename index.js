@@ -69,6 +69,12 @@ if(command === `${prefix}update`){
 
 }
 
+if(command === `${prefix}jo`){
+
+    return message.channel.send("*Jo hoe gaat ie dan?");
+
+}
+
 
     
     
