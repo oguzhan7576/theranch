@@ -75,6 +75,12 @@ if(command === `${prefix}jo`){
 
 }
 
+if(command === `${prefix}sa`){
+
+    return message.channel.send("Aleykumselam naber?");
+
+}
+
 
     
     
