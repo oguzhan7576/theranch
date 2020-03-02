@@ -33,7 +33,7 @@ bot.on("ready", async () => {
 
 console.log(`${bot.user.username} is online!`)
 
-bot.user.setActivity("The Ranch | !help", {type: "LISTENING"});
+bot.user.setActivity("The Ranch", {type: "LISTENING"});
 
 })
 
