@@ -83,7 +83,7 @@ if(command === `${prefix}sa`){
 
 if(command === `${prefix}boost`){
 let user = message.mentions.users.first();
-return message.channel.send(`${user} Heeft zojuist de server geboost!`);
+return message.channel.send(`${user} Heeft zojuist de server **GEBOOST!**`);
 }
 
 
