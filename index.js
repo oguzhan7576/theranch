@@ -81,6 +81,12 @@ if(command === `${prefix}sa`){
 
 }
 
+if(command === `${prefix}boost`){
+
+    return message.reply("Heeft Zojuist de Server **GEBOOST!** :boosting:");
+
+}
+
 
     
     
