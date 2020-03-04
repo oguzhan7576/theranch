@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
 
     //
 
-    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("You cannot warn people");
+    if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You cannot warn people");
 
     var user = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
  
