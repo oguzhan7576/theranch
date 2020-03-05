@@ -95,7 +95,7 @@ module.exports.run = async (bot, message, args) => {
  
         // Voor iedere winnaar gaan we een bericht sturen.
         for (var i = 0; i < winners.length; i++) {
-            message.channel.send("Congratulations " + winners[i] + `! You won  **${item}**.`);
+            message.channel.send("**Congratulations** " + winners[i] + `! **You won**  **${item}**.`);
         }
  
     }, 1000 * time);
