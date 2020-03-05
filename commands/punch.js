@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
             message.channel.send(`${user} **You got a punch from** ${message.author.username} 👊`,{
                 embed: {
                     image: {
-                        url: "https://i.imgur.com/R5KBiYV.gif"
+                        url: "https://media2.giphy.com/media/7Nsu3HCWLRVgQ/source.gif"
                     }
                 }
             })
