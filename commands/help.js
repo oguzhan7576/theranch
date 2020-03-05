@@ -12,7 +12,7 @@ message.author.send(text);
 message.channel.send("📝*Check your Dm!*");
 
 } catch (error) {
-    message.channel.send(embed)
+    message.channel.send("Something went wrong");
 }
 
 
