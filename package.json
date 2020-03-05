@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
+    "ffmpeg-static": "^4.0.1",
     "ms": "^2.1.2",
+    "opusscript": "0.0.7",
     "yt-search": "^1.1.2",
     "ytdl-core": "^2.0.0"
   },
