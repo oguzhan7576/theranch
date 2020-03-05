@@ -5,7 +5,7 @@ const client = new Discord.Client({
   disableEveryone: true
 });
 
-const config = require('./config.json');
+const config = require('../config.json');
 const db = require('quick.db');
 // const moment = require('moment');
 const prefix = config.prefix;
