@@ -22,7 +22,7 @@ message.channel.bulkDelete(amount).then(() => {
 
     } else if (args[0] == 1){
 
-        message.channel.send(`I have 1 message deleted.`).then(msg => msg.delete(3000));
+        message.channel.send(`I have message deleted.`).then(msg => msg.delete(3000));
     
     
 
@@ -37,7 +37,7 @@ message.channel.bulkDelete(amount).then(() => {
         
 
         
-    message.channel.send(`I have 1 message deleted.`).then(msg => msg.delete(3000));
+    message.channel.send(`I have message deleted.`).then(msg => msg.delete(3000));
 
 });
 
