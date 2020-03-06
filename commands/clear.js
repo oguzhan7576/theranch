@@ -4,7 +4,7 @@ module.exports.run = async(bot, message, args) =>{
     
  //!clear 21
 
-if(!message.member.hasPermissions("MANAGE_MESSAGES")) return message.reply("You do not have Permissions.");
+if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have Permissions.");
 
 if (!args[0]) return message.reply("Specify quantity.");
 
