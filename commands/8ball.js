@@ -17,4 +17,4 @@ module.exports.run = async (_, message, args) => {
   
   module.exports.help = {
     name: "8ball"
-  };
+  }; 
