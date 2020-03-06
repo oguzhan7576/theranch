@@ -37,7 +37,7 @@ message.channel.bulkDelete(amount).then(() => {
         
 
         
-message.channel.send(`I have ${args[0]} message's deleted.`).then(msg.delete(3000));
+    message.channel.send(`I have 1 message deleted.`).then(msg => msg.delete(3000));
 
 });
 
