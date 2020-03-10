@@ -50,7 +50,7 @@ module.exports.run = async (bot, message, args) => {
         // Hier gaan we al de mensen over gaan en kijken als de bot er tussen staan
         // De bot moeten we uit de lijst weghalen en dan gaan we verder.
         for (var i = 0; i < peopleReacted.length; i++) {
-            if (peopleReacted[i].id == bot.user.id) {
+            if (peopleReacted[i].id == bot.users.id) {
                 peopleReacted.splice(i, 1);
                 continue;
             }
