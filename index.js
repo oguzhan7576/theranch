@@ -156,22 +156,26 @@ if(command === `${prefix}ban`) {
     
   }
 
- bot.on("guildMemberAdd", member => {
+  bot.on('message', message => {
+    let args = message.content.substring(PREFIX.length).split(" ");
+   
  
-    const channel = member.guild.channels.find("name", "👑welcome-log");
-    if (!channel) console.log("Kan het kanaal niet vinden.");
+    switch (args[0]) {
+        case 'help':
+            const Embed = new RichEmbed()
+            .setTitle("Helper Embed")
+            .setColor(0xFF0000)
+            .setDescription("Make sure to use the !help to get access to the commands");
  
-    var joinEmbed = new discord.RichEmbed()
-        .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
-        .setDescription(`Hoi ${member.user.username}, **Welkom op de server**. Hier nog meer uitleg.`)
-        .setColor("#00FF00")
-        .setTimestamp()
-        .setFooter("Gebruiker gejoined.");
+            message.author.send(Embed);
+        break;
+    }
  
-    channel.send(joinEmbed);
+ 
+});
  
 });
 
-});
+
 
 bot.login(process.env.token);
