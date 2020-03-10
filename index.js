@@ -158,7 +158,7 @@ if(command === `${prefix}ban`) {
 
  bot.on("guildMemberAdd", member => {
  
-    const channel = member.guild.channels.find("name", "report");
+    const channel = member.guild.channels.find("name", "👑welcome-log");
     if (!channel) console.log("Kan het kanaal niet vinden.");
  
     var joinEmbed = new discord.RichEmbed()
