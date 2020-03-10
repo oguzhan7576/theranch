@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 try{
     
     
-    var helpEmbed = new discord.RichEmbed()
+    const embed = new discord.RichEmbed()
     .setColor("#FF0000")
     .setTimestamp();
 
