@@ -11,7 +11,7 @@ var text = "hezrres";
 
 message.author.send(text);
 
-
+return;
 
 
 
