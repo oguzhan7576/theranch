@@ -154,7 +154,7 @@ if(command === `${prefix}ban`) {
     
         return;
     
- }
+  }
 
  bot.on("guildMemberAdd", member => {
  
