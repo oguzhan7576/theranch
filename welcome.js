@@ -13,3 +13,6 @@ bot.on("guildMemberAdd", member => {
     channel.send(joinEmbed);
  
 });
+module.exports.help = {
+    name: "welcome"
+}
