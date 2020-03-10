@@ -156,23 +156,6 @@ if(command === `${prefix}ban`) {
     
   }
 
-  bot.on('message', message => {
-    let args = message.content.substring(PREFIX.length).split(" ");
-   
- 
-    switch (args[0]) {
-        case 'help':
-            const Embed = new RichEmbed()
-            .setTitle("Helper Embed")
-            .setColor(0xFF0000)
-            .setDescription("Make sure to use the !help to get access to the commands");
- 
-            message.author.send(Embed);
-        break;
-    }
- 
- 
-});
  
 });
 
