@@ -1,6 +1,7 @@
 const discord = require("discord.js");
 const botConfig = require("./botconfig.json");
 
+
 const fs = require("fs");
 
 const bot = new discord.Client();
@@ -55,6 +56,7 @@ var arguments = messageArray.slice(1);
 var commands = bot.commands.get(command.slice(prefix.length));
 
 if(commands) commands.run(bot,message, arguments);
+
 
 
 //Bercihtje 
