@@ -60,7 +60,7 @@ module.exports.run = async (bot, message, args) => {
         if (peopleReacted.length == 0) {
             return message.channel.send(" Nobody won. Better luck next time.");
         }
- 
+
         // Tijdelijk kijken we na als er te wienig mensen hebben mee gedaan aan de wedstrijd.
         if (peopleReacted.length < winnerCount) {
             return message.channel.send("There are too few people who participated.");
