@@ -37,7 +37,7 @@ var warnEmbed = new discord.RichEmbed()
 .addField("Warned by", message.author)
 .addField("Total Warns:", warns[user.id].warns)
 .addField("Reason:", reason)
-.setImage(message.member.avatarURL)
+.setAuthor(message.member.avatarURL)
 .setFooter(`Information about: ${bot.user.username}. Developed by: The Ranch`)
 .setTimestamp();
 
