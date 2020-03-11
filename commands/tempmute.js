@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
 
     if (!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("Sorry you have no Permissions to this.");
 
-    var user = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    var user = message.guild.member(message.mentions.user.first() || message.guild.members.get(args[0]));
 
     if (!user) return message.channel.send("Specify a user");
 
