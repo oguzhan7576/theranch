@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
      });
 
 var warnEmbed = new discord.RichEmbed()
-.setThumbnail((target.displayAvatarURL))
+.setThumbnail((displayAvatarURL))
 .setDescription("Warn")
 .setColor("#eb4034")
 .setAuthor("User Name", message.author.username)
