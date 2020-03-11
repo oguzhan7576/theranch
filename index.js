@@ -85,6 +85,7 @@ if(command === `${prefix}sa`){
 
 if(command === `${prefix}boost`){
 let user = message.mentions.users.first();
+if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Sorry you ar not admin.");
 return message.channel.send(`${user} Heeft zojuist de server **GEBOOST!**`);
 }
 
