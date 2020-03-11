@@ -29,7 +29,10 @@ module.exports.run = async (bot, message, args) => {
          if (err) console.log(err);
      });
 
+     let bicon = bot.user.displayAvatarURL;
+
 var warnEmbed = new discord.RichEmbed()
+
 .setDescription("Warn")
 .setColor("#eb4034")
 .setThumbnail(bicon)
