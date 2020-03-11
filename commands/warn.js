@@ -34,8 +34,6 @@ module.exports.run = async (bot, message, args) => {
 
      
 var warnEmbed = new discord.RichEmbed()
-let bicon = bot.user.displayAvatarURL
-
 .setDescription("Warn")
 .setColor("#eb4034")
 .setAuthor(`${message.guild.name} Info`, message.guild.iconURL)
