@@ -5,6 +5,8 @@ const warns = JSON.parse(fs.readFileSync("./warning.json", "utf8"));
 
 module.exports.run = async (bot, message, args) => {
 
+  
+
     //
 
     if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You cannot warn people");
@@ -29,10 +31,9 @@ module.exports.run = async (bot, message, args) => {
          if (err) console.log(err);
      });
 
+
      let bicon = bot.user.displayAvatarURL;
-
 var warnEmbed = new discord.RichEmbed()
-
 .setDescription("Warn")
 .setColor("#eb4034")
 .setThumbnail(bicon)
