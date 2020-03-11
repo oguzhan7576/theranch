@@ -40,7 +40,7 @@ var warnEmbed = new discord.RichEmbed()
 .setFooter(`Information about: ${bot.user.username}. Developed by: The Ranch`)
 .setTimestamp();
 
-var warnChannel = message.guild.channels.find(`name`, "📂sanction-log");
+var warnChannel = message.guild.channels.find(ch => ch.name == "📂sanction-log");
 if(!warnChannel) return message.guild.send("I can not find the channel try again");
 
 warnChannel.send(warnEmbed);
