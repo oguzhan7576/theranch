@@ -32,11 +32,13 @@ module.exports.run = async (bot, message, args) => {
      });
 
 
-     let bicon = bot.user.displayAvatarURL;
+     
 var warnEmbed = new discord.RichEmbed()
+let bicon = bot.user.displayAvatarURL
+
 .setDescription("Warn")
 .setColor("#eb4034")
-.setThumbnail(bicon)
+.setAuthor(`${message.guild.name} Info`, message.guild.iconURL)
 .setAuthor("User Name", message.author.username)
 .addField("Warned member", user)
 .addField("Warned by", message.author)
