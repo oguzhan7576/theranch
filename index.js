@@ -67,7 +67,7 @@ if(commands) commands.run(bot,message, arguments);
 
 if(command === `${prefix}update`){
 
-    return message.channel.send("**The Ranch > v11.8** \n *Update is succesfully Updated!*");
+    return message.channel.send("**The Ranch > v14.9** \n *Update is succesfully Updated!*");
 
 }
 
